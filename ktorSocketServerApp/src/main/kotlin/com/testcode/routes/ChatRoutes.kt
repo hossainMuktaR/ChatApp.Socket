@@ -48,7 +48,7 @@ fun Route.getAllMessages(roomController: RoomController){
     get("/messages") {
         call.respond(
             HttpStatusCode.OK,
-            "Hello World"
+            roomController.getAllMessages()
         )
     }
 }
